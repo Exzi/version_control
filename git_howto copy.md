@@ -37,6 +37,28 @@ git branch [имя_ветки]: Создание новой ветки
 ```sh
 git branch -d <имя_ветки>: Удаление ветки
 ```
+
+# Новые команды из 6 урока
+1. Делаем fork репозитория, в которой потом хотим сделать pull request. Ищем кнопку Fork на странице репозитория <ссылка>
+2. Выполняем команду клонирования из своей fork-копии
+```sh
+git clone <ссылка>
+```
+3. Создаем новую ветку и вносим необходимые изменения в файл
+```sh
+git checkout -b updatereadme
+vim README.md
+git add README.md
+git commit -m "комментарий"
+```
+4. Делаем push  
+```sh
+git push --set-upstream origin updatereadme
+```
+5. Переходим на свою страницу репозитория. Выбираем ветку **updatereadme** и жмем кнопку **Compare & pull request**
+
+
+
 # Инструкция по Mardown
 ## Заголовки
 ```sh
